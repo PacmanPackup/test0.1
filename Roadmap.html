@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Map</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+        .Roadmap{
+            background-color:#7B3F00 ;
+            border-radius: 50px;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgb(234, 171, 14);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 1.5rem;
+            color: yellow;
+        }
+        .roadmap{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+        }
+        .milestone{
+            background-color: #0047 ;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: left;
+
+        }
+        .milestone h2 {
+            margin-bottom: 0.5rem;
+            color: gold;
+        }
+        .milestone ul{
+            list-style-type: none;
+            padding-left: 1rem;
+
+        }
+        .milestone ul li {
+            margin-bottom: 1rem;
+            color: rgb(93, 254, 254);
+        }
+        @media(max-width: 768px){
+            .Roadmap{
+                padding :1rem;
+                width: 90;
+            }
+            .milestone{
+                padding: 0.5rem;
+            }
+            .milestone ul{
+                padding-left: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Roadmap">
+        <h1> Roadmap</h1>
+        <div class="roadmap">
+            <div class="milestone">
+            <h2> Phas 1 : Initial Setup</h2>
+            <ul> 
+                <li>Designing</li>
+                <li>Initialize the game</li>
+                <li>Marketing</li>
+            </ul>
+         </div>   
+        
+    <div class="milestone">
+        <h2> Phase 2: Core Feature</h2>
+        <ul>
+            <li> Implement authenticate Feature</li>
+            <li> Develop main Feature</li>
+            <li> Design and integrate </li>
+        </ul>
+    </div>
+    <div class="milestone">
+        <h2>Phase 3: Testing and Deployment</h2>
+        <ul>
+            <li> Coopreation</li>
+            <li> Launch Beta </li>
+            <li> Feedback</li>
+        </ul>
+    </div>
+    <div class="milestone">
+        <h2> Phasr 4: Post-Launch Improvements</h2>
+        <ul>
+            <li>Fix Bugs</li>
+            <li>Implement additional Features</li>
+            <li> Optimize performance</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

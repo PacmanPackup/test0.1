@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+body{
+    background-color: black; 
+}
+
+
+.website{
+    color: yellow;
+    font-size: medium;
+}
+
+.About-us, .More , .Road, .Explore{
+    color: rgb(197, 149, 77);
+   display: inline-block;
+   padding: 0.5rem 1rem;
+   background-color:black;
+   text-decoration: none;
+   border-radius: 50px;
+   transition: transform 0.5s, background-color 0.3s;
+   font-size: 18px;
+}
+
+.Explore{
+    float: right;
+}
+
+
+
+  .website{
+    padding:1.5rem 2rem;
+  }
+  #home{
+   text-align: center ;
+   color: #ffd700;
+   margin: 1.5rem;
+}
+
+
+
+.Spidy h1{
+    font-size: 1.6em;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+
+.left, .middle, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex-basis: calc(33.333%-20px);
+}
+
+.left img, .middle img, .right img {
+    width: 350px; 
+    height: auto;
+    margin-bottom: 10px ;
+    border-radius: 50%;
+}
+
+
+.left section, .middle section, .right section {
+    text-align: center;
+    color: #ff6347;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-style: italic;
+    font-size: small;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left {
+    margin-left: 0;
+}
+
+.right {
+    margin-right: 0;
+}
+
+@media (max-width: 768px){
+    .left, .middle, .right{
+        flex-basis: calc(50%-20px);
+    }
+}
+@media (max-width: 480px)
+{
+    .left, .middle, .right {
+        flex-basis: 100%;
+    }
+}
